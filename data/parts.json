@@ -1,0 +1,53 @@
+[
+  {
+  "id": 1,
+  "article": "CH-OF-001",
+  "name": "Масляный фильтр",
+  "brand": "Chery",
+  "model": "Tiggo 7 Pro",
+  "generation": "2020-2024",
+  "category": "Фильтры",
+  "price": 890,
+  "stock": 12,
+  "description": "Оригинальный масляный фильтр двигателя.",
+  "images": [
+    "images/parts/oil_filter.jpg",
+    "images/parts/oil_filter.jpg",
+    "images/parts/oil_filter.jpg"
+  ]
+},
+{
+  "id": 2,
+  "article": "GL-BR-001",
+  "name": "Тормозные колодки передние",
+  "brand": "Geely",
+  "model": "Coolray",
+  "generation": "2019-2024",
+  "category": "Тормозная система",
+  "price": 3200,
+  "stock": 5,
+  "description": "Комплект передних тормозных колодок.",
+  "images": [
+    "images/parts/brake-1.jpg",
+    "images/parts/brake-2.jpg",
+    "images/parts/brake-3.jpg"
+  ]
+},
+{
+  "id": 3,
+  "article": "OM-SH-001",
+  "name": "Амортизатор передний",
+  "brand": "Omoda",
+  "model": "C5",
+  "generation": "2022-2025",
+  "category": "Подвеска",
+  "price": 5400,
+  "stock": 7,
+  "description": "Передний амортизатор подвески.",
+  "images": [
+    "images/parts/shock-1.jpg",
+    "images/parts/shock-2.jpg",
+    "images/parts/shock-3.jpg"
+  ]
+}
+]
