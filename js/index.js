@@ -230,7 +230,7 @@ function updateCard(id) {
 
         <div class="card-icon compare-action ${compareItem ? "active" : ""}"
             data-id="${id}">
-            <img src="images/compare_add.svg" alt="Сравнение">
+            <img src="images/compare.svg" alt="Сравнение">
         </div>
     `;
 
@@ -326,7 +326,7 @@ function render(items) {
 
                 <div class="card-icon compare-action ${compareItem ? 'active' : ''}"
                     data-id="${item.id}">
-                    <img src="images/compare_add.svg" alt="Сравнение">
+                    <img src="images/compare.svg" alt="Сравнение">
                 </div>
 
             </div>

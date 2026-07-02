@@ -581,8 +581,13 @@ body{
 
 .card-icon.compare-action img{
 
+    display:block;
     width:18px;
     height:18px;
+    padding:0;
+    margin:0;
+    background:none;
+    box-shadow:none;
 
     transition:.2s;
 
