@@ -47,8 +47,13 @@ body{
 .header-inner{
     display:flex;
     align-items:center;
+    justify-content:space-between; /* ВОТ ЭТО ВАЖНО */
     gap:18px;
-    justify-content:space-between;
+}
+.header-left{
+    display:flex;
+    align-items:center;
+    gap:18px;
 }
 
 .logo img{
@@ -143,9 +148,6 @@ body{
     transition:.3s;
 }
 
-.card:hover img{
-    transform:scale(1.03);
-}
 
 .card-content{
     padding:16px;
@@ -247,6 +249,76 @@ body{
     padding:60px 0;
 }
 
+/* PAGE LAYOUT */
+.page-section{
+    padding:30px 0 60px;
+}
+
+.page-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    margin-bottom:24px;
+}
+
+.page-top h2{
+    font-size:26px;
+}
+
+.page-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
+    gap:20px;
+}
+
+.page-card{
+    background:var(--card);
+    border-radius:var(--radius);
+    overflow:hidden;
+    border:1px solid var(--border);
+    box-shadow:var(--shadow);
+}
+
+.page-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    background:#f3f4f6;
+}
+
+.page-card-body{
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.page-card-body h3{
+    font-size:18px;
+}
+
+.page-card-body p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+.page-card-footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    margin-top:8px;
+}
+
+.btn-danger{
+    background:#ef4444;
+}
+
+.btn-danger:hover{
+    background:#dc2626;
+}
+
 /* MOBILE */
 @media(max-width:900px){
     .product-page{
@@ -265,6 +337,11 @@ body{
     .filters input,
     .filters select{
         width:100%;
+    }
+
+    .page-top{
+        flex-direction:column;
+        align-items:flex-start;
     }
 }
 .header-right{
@@ -310,7 +387,7 @@ body{
     position:relative;
     width:32px;
     height:32px;
-    display:flex;
+    display: inline-block;
     align-items:center;
     justify-content:center;
     margin-bottom:4px;
@@ -341,6 +418,7 @@ body{
     text-align:center;
     cursor:pointer;
     color:#444;
+    text-decoration:none;
 }
 .tool-icon{
     position:relative;
@@ -363,4 +441,279 @@ body{
     text-align:center;
     font-size:14px;
     line-height:1.2;
+}
+/*==========================
+КНОПКИ КОРЗИНЫ И СРАВНЕНИЯ
+НА КАРТОЧКЕ ТОВАРА
+==========================*/
+
+.card-bottom{
+    margin-top:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:14px;
+}
+
+.card-icons{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+/* ===== ИКОНКИ КАРТОЧКИ ===== */
+.card-icons img{
+    width:42px;
+    height:42px;
+
+    padding:8px;
+
+    object-fit:contain;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+
+    background:#ffffff; /* было серое — сделал белым */
+    color:#fff;
+}
+
+/* hover эффект */
+.card-icons img:hover{
+    transform:translateY(-2px) scale(1.08);
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.card-icons img:active{
+    transform:scale(.95);
+}
+
+/* ===== СЧЁТЧИК ===== */
+.tool-count{
+    position:absolute;
+    top:-8px;
+    right:-8px;
+
+    width:16px;
+    height:16px;
+
+    padding:0;
+
+    border-radius:50%;
+
+    background:#ef4444;
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:8px;
+    font-weight:700;
+    line-height:1;
+
+    box-sizing:border-box;
+
+    box-shadow:0 2px 6px rgba(0,0,0,.2);
+}
+
+.tool-count.large{
+    width:auto;
+    min-width:24px;
+    padding:0 4px;
+    border-radius:8px;
+}
+.tool-count[data-count]{
+    font-size:10px;
+}
+/* скрытие пустого */
+.tool-count:empty{
+    display:none;
+}
+
+/* ===== TOOL ICONS В ШАПКЕ ===== */
+.tool-item:hover{
+    color:var(--primary);
+}
+
+.tool-item:hover img{
+    transform:scale(1.1);
+    transition:0.25s;
+}
+
+/* ===== КНОПКА КОРЗИНЫ ===== */
+.cart-action{
+    background:#1d4ed8 !important;
+    color:#ffffff;
+}
+
+.cart-action:hover{
+    background:#1942b3 !important;
+    color:#ffffff;
+    transform:scale(1.05);
+}
+
+/* ===== КНОПКА СРАВНЕНИЯ ===== */
+.card-icon.compare-action{
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#f2f3f5;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.card-icon.compare-action:hover{
+    transform:scale(1.05);
+}
+
+.card-icon.compare-action img{
+
+    width:18px;
+    height:18px;
+
+    transition:.2s;
+
+    opacity:.65;
+}
+
+.card-icon.compare-action:hover img{
+
+    opacity:1;
+
+    filter:brightness(0) saturate(100%)
+    invert(29%)
+    sepia(98%)
+    saturate(2556%)
+    hue-rotate(208deg)
+    brightness(97%)
+    contrast(101%);
+}
+
+.card-icon.compare-action.active{
+
+    background:#eb2525;
+
+}
+
+.card-icon.compare-action.active img{
+
+    opacity:1;
+
+    filter:brightness(0) invert(1);
+
+}
+
+.qty-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    background:#f3f4f6;
+    border-radius:12px;
+
+    height:42px;
+
+    padding:0 5px;
+}
+
+.qty-btn{
+
+    width:30px;
+    height:30px;
+
+    border:none;
+    border-radius:8px;
+
+    cursor:pointer;
+
+    background:white;
+
+    font-size:18px;
+    font-weight:500;
+
+    transition:.2s;
+}
+
+.qty-btn:hover{
+    background:#dbdbdb;
+    color:rgb(0, 0, 0);
+}
+
+.qty-value{
+
+    min-width:22px;
+
+    text-align:center;
+
+    font-size:17px;
+    font-weight:500;
+}
+/*=========================
+      TOP BAR
+=========================*/
+
+.top-bar{
+    width:100%;
+    background:#d3cfcf;
+    color:#000000;
+    font-size:14px;
+}
+
+.top-bar-inner{
+    height:46px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.top-bar-left{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.top-bar-right{
+    color:#d1d5db;
+    font-size:13px;
+}
+
+.top-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.top-icon img{
+    width:22px;
+    height:22px;
+    transition:.25s;
+}
+
+.top-icon:hover img{
+    transform:scale(1.15);
+}
+
+.top-phone{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.top-phone:hover{
+    color:#3b82f6;
 }
