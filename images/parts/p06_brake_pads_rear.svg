@@ -14,7 +14,6 @@
       <stop offset="100%" stop-color="#39404a"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
   <ellipse cx="400" cy="520" rx="250" ry="26" fill="rgba(20,30,45,.12)"/>
   <g transform="translate(150 210)">
     <path d="M0 30 Q200 55 250 30 L250 110 Q200 135 0 110 Z" fill="url(#steel)" stroke="#7d8790" stroke-width="3"/>

@@ -209,7 +209,7 @@ const App = (() => {
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             </button>
             <div class="lightbox-stage">
-                <img src="${list[index]}" alt="">
+                <img src="${list[index]}" alt="" draggable="false">
             </div>
             <div class="lightbox-counter"><span class="lightbox-current">${index + 1}</span> / ${list.length}</div>
             ${list.length > 1 ? `
@@ -342,6 +342,8 @@ const App = (() => {
 
         stage.addEventListener("pointerup", endDrag);
         stage.addEventListener("pointercancel", endDrag);
+
+        img.addEventListener("dragstart", e => e.preventDefault());
 
         img.addEventListener("click", e => {
             e.stopPropagation();

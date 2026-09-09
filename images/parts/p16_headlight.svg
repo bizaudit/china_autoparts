@@ -20,7 +20,6 @@
       <stop offset="100%" stop-color="#f0f4f8"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
   <ellipse cx="400" cy="520" rx="260" ry="20" fill="rgba(20,30,45,.12)"/>
   <g transform="translate(400 300)">
     <path d="M-280 0 Q-280 -170 0 -200 Q280 -170 300 0 L300 150 Q300 180 260 180 L-260 180 Q-280 180 -280 150Z" fill="url(#body)" stroke="#6f7883" stroke-width="4"/>

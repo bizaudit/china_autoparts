@@ -19,7 +19,6 @@
       <stop offset="100%" stop-color="#87909b"/>
     </radialGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
   <ellipse cx="400" cy="520" rx="240" ry="20" fill="rgba(20,30,45,.12)"/>
   <g transform="translate(300 280)">
     <rect x="0" y="-18" width="280" height="36" rx="10" fill="url(#body)" stroke="#6f7883" stroke-width="3"/>

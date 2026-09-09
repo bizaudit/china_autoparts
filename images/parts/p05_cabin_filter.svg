@@ -10,7 +10,6 @@
       <stop offset="100%" stop-color="#38404a"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
   <ellipse cx="400" cy="520" rx="250" ry="24" fill="rgba(20,30,45,.12)"/>
   <g transform="translate(190 210)">
     <path d="M0 20 Q210 42 260 20 L260 100 Q210 122 0 100 Z" fill="#eef1f5" stroke="#7d8790" stroke-width="3"/>

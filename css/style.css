@@ -1927,7 +1927,7 @@ a {
 .lightbox {
     position:fixed;
     inset:0;
-    background:rgba(15,23,42,.9);
+    background:radial-gradient(ellipse at 50% 38%, #f8fafc 0%, #e8ecf2 55%, #d5dbe3 100%);
     z-index:600;
     display:flex;
     align-items:center;
@@ -1958,7 +1958,7 @@ a {
     width:44px;
     height:44px;
     border-radius:12px;
-    background:rgba(255,255,255,.12);
+    background:rgba(15,23,42,.45);
     border:none;
     color:#fff;
     cursor:pointer;
@@ -1989,6 +1989,8 @@ a {
     object-fit:contain;
     transition:transform .2s cubic-bezier(.4,0,.2,1), opacity .15s ease;
     user-select:none;
+    -webkit-user-drag:none;
+    user-drag:none;
 }
 .lightbox-stage img.fade {
     opacity:0;
@@ -2011,8 +2013,8 @@ a {
     width:48px;
     height:48px;
     border-radius:50%;
-    background:rgba(255,255,255,.14);
-    border:1px solid rgba(255,255,255,.12);
+    background:rgba(15,23,42,.4);
+    border:1px solid rgba(15,23,42,.25);
     color:#fff;
     cursor:pointer;
     display:flex;
@@ -2035,7 +2037,7 @@ a {
     z-index:3;
     padding:6px 14px;
     border-radius:999px;
-    background:rgba(255,255,255,.14);
+    background:rgba(15,23,42,.5);
     color:#fff;
     font-size:14px;
     font-weight:600;
@@ -2054,8 +2056,8 @@ a {
     gap:8px;
     padding:8px 12px;
     border-radius:999px;
-    background:rgba(255,255,255,.14);
-    border:1px solid rgba(255,255,255,.12);
+    background:rgba(15,23,42,.5);
+    border:1px solid rgba(15,23,42,.25);
     backdrop-filter:blur(8px);
     user-select:none;
 }

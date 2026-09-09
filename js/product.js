@@ -220,6 +220,10 @@ function bindProductEvents(item) {
     };
 
     addCart.onclick = () => {
+        if (App.inCart(item.id)) {
+            window.location.href = "cart.html";
+            return;
+        }
         App.addToCart(item.id, qty);
         addCart.textContent = `В корзине (${App.inCart(item.id)?.qty || qty})`;
     };

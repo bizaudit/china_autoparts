@@ -13,7 +13,6 @@
       <stop offset="100%" stop-color="#171c22"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
   <ellipse cx="400" cy="520" rx="280" ry="24" fill="rgba(20,30,45,.12)"/>
   <g transform="translate(400 300)">
     <ellipse rx="300" ry="150" fill="none" stroke="url(#belt)" stroke-width="34"/>

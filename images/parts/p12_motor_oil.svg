@@ -18,7 +18,6 @@
       <stop offset="100%" stop-color="#d98e18"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
   <ellipse cx="400" cy="520" rx="240" ry="24" fill="rgba(20,30,45,.12)"/>
   <g transform="translate(250 140)">
     <path d="M0 260 Q300 250 300 0 L280 0 L40 0 L0 260Z" fill="url(#can)"/>
