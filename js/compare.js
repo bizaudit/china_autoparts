@@ -18,14 +18,14 @@ function updateCounters() {
         const cartText = cartQty > 99 ? "99+" : cartQty;
         cartBadge.textContent = cartText;
         cartBadge.style.display = cartQty ? "flex" : "none";
-        cartBadge.classList.toggle("large", cartText.length > 1);
+        cartBadge.classList.toggle("large", String(cartText).length > 1);
     }
 
     if (compareBadge) {
         const compareText = compareCount > 99 ? "99+" : compareCount;
         compareBadge.textContent = compareText;
         compareBadge.style.display = compareCount ? "flex" : "none";
-        compareBadge.classList.toggle("large", compareText.length > 1);
+        compareBadge.classList.toggle("large", String(compareText).length > 1);
     }
 }
 
@@ -42,12 +42,18 @@ function render() {
     const items = getCompareItems();
 
     if (!items.length) {
-        compareList.innerHTML = '<div class="empty">Список сравнения пуст</div>';
+        compareList.innerHTML = `
+        <div class="empty">
+            <div class="empty-icon">⚖️</div>
+            <h3>Список сравнения пуст</h3>
+            <p>Добавьте товары из каталога для сравнения характеристик</p>
+            <a href="index.html" class="btn" style="max-width:280px;margin:20px auto 0;">Перейти в каталог</a>
+        </div>`;
         return;
     }
 
-    compareList.innerHTML = items.map(item => `
-        <article class="page-card">
+    compareList.innerHTML = items.map((item, i) => `
+        <article class="page-card" style="animation-delay:${i * .05}s">
             <img src="${item.images?.[0] || "images/no-image.jpg"}" alt="${item.name}">
             <div class="page-card-body">
                 <h3>${item.name}</h3>
@@ -55,8 +61,8 @@ function render() {
                 <p>Модель: ${item.model}</p>
                 <p>Артикул: ${item.article}</p>
                 <div class="page-card-footer">
-                    <div class="price">${Number(item.price).toLocaleString("ru-RU")} ₽</div>
-                    <button class="btn add-cart-btn" data-id="${item.id}">В корзину</button>
+                    <div class="price">${Number(item.price).toLocaleString("ru-RU")} <span class="currency">₽</span></div>
+                    <button class="btn add-cart-btn" data-id="${item.id}" style="margin-top:0;max-width:160px;">В корзину</button>
                 </div>
                 <button class="btn btn-danger remove-btn" data-id="${item.id}">Удалить</button>
             </div>
@@ -79,10 +85,8 @@ function bindEvents() {
 function addToCart(id) {
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
     const existing = cart.find(item => item.id === id);
-
     if (existing) existing.qty++;
     else cart.push({ id, qty: 1 });
-
     localStorage.setItem("cart", JSON.stringify(cart));
     updateCounters();
 }
@@ -99,7 +103,12 @@ async function load() {
         render();
     } catch (e) {
         console.error(e);
-        compareList.innerHTML = '<div class="empty">Не удалось загрузить данные</div>';
+        compareList.innerHTML = `
+        <div class="empty">
+            <div class="empty-icon">⚠️</div>
+            <h3>Ошибка загрузки</h3>
+            <p>Не удалось загрузить данные</p>
+        </div>`;
     }
 }
 

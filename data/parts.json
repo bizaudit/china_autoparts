@@ -28,9 +28,7 @@
   "stock": 5,
   "description": "Комплект передних тормозных колодок.",
   "images": [
-    "images/parts/brake-1.jpg",
-    "images/parts/brake-2.jpg",
-    "images/parts/brake-3.jpg"
+    "images/parts/generator.png"
   ]
 },
 {
@@ -45,9 +43,7 @@
   "stock": 7,
   "description": "Передний амортизатор подвески.",
   "images": [
-    "images/parts/shock-1.jpg",
-    "images/parts/shock-2.jpg",
-    "images/parts/shock-3.jpg"
+    "images/parts/motor.jpg"
   ]
 }
 ]
