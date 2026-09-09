@@ -1,49 +1,334 @@
 [
   {
-  "id": 1,
-  "article": "CH-OF-001",
-  "name": "Масляный фильтр",
-  "brand": "Chery",
-  "model": "Tiggo 7 Pro",
-  "generation": "2020-2024",
-  "category": "Фильтры",
-  "price": 890,
-  "stock": 12,
-  "description": "Оригинальный масляный фильтр двигателя.",
-  "images": [
-    "images/parts/oil_filter.jpg",
-    "images/parts/oil_filter.jpg",
-    "images/parts/oil_filter.jpg"
-  ]
-},
-{
-  "id": 2,
-  "article": "GL-BR-001",
-  "name": "Тормозные колодки передние",
-  "brand": "Geely",
-  "model": "Coolray",
-  "generation": "2019-2024",
-  "category": "Тормозная система",
-  "price": 3200,
-  "stock": 5,
-  "description": "Комплект передних тормозных колодок.",
-  "images": [
-    "images/parts/generator.png"
-  ]
-},
-{
-  "id": 3,
-  "article": "OM-SH-001",
-  "name": "Амортизатор передний",
-  "brand": "Omoda",
-  "model": "C5",
-  "generation": "2022-2025",
-  "category": "Подвеска",
-  "price": 5400,
-  "stock": 1,
-  "description": "Передний амортизатор подвески.",
-  "images": [
-    "images/parts/motor.jpg"
-  ]
-}
+    "id": 1,
+    "article": "CH-OF-001",
+    "oem": "T11110100101",
+    "name": "Масляный фильтр",
+    "brand": "Chery",
+    "model": "Tiggo 7 Pro",
+    "generation": "2020-2024",
+    "category": "Фильтры",
+    "price": 890,
+    "oldPrice": 1100,
+    "stock": 12,
+    "warranty": 12,
+    "delivery": "1-2 дня",
+    "description": "Оригинальный масляный фильтр двигателя. Подходит для Chery Tiggo 7 Pro, Tiggo 8, Tiggo 4.",
+    "images": [
+      "images/parts/oil_filter.jpg",
+      "images/parts/filter.svg"
+    ]
+  },
+  {
+    "id": 2,
+    "article": "GL-BR-001",
+    "oem": "5111000A01",
+    "name": "Тормозные колодки передние",
+    "brand": "Geely",
+    "model": "Coolray",
+    "generation": "2019-2024",
+    "category": "Тормозная система",
+    "price": 3200,
+    "oldPrice": 3800,
+    "stock": 5,
+    "warranty": 12,
+    "delivery": "1-2 дня",
+    "description": "Комплект передних тормозных колодок. Низкая шумность, высокий ресурс.",
+    "images": [
+      "images/parts/brakes.svg"
+    ]
+  },
+  {
+    "id": 3,
+    "article": "OM-SH-001",
+    "oem": "G4D001B002",
+    "name": "Амортизатор передний",
+    "brand": "Omoda",
+    "model": "C5",
+    "generation": "2022-2025",
+    "category": "Подвеска",
+    "price": 5400,
+    "oldPrice": 6200,
+    "stock": 4,
+    "warranty": 6,
+    "delivery": "2-3 дня",
+    "description": "Передний амортизатор подвески. Газомасляный, повышенная плавность хода.",
+    "images": [
+      "images/parts/suspension.svg"
+    ]
+  },
+  {
+    "id": 4,
+    "article": "CH-AF-002",
+    "oem": "T11040110101",
+    "name": "Воздушный фильтр",
+    "brand": "Chery",
+    "model": "Tiggo 7 Pro",
+    "generation": "2020-2024",
+    "category": "Фильтры",
+    "price": 750,
+    "stock": 15,
+    "warranty": 12,
+    "delivery": "1-2 дня",
+    "description": "Воздушный фильтр двигателя — двухслойная фильтрующая ткань.",
+    "images": [
+      "images/parts/filter.svg"
+    ]
+  },
+  {
+    "id": 5,
+    "article": "GL-CF-003",
+    "oem": "3103-00BL1",
+    "name": "Фильтр салона угольный",
+    "brand": "Geely",
+    "model": "Coolray",
+    "generation": "2019-2024",
+    "category": "Фильтры",
+    "price": 990,
+    "stock": 9,
+    "warranty": 12,
+    "delivery": "1-2 дня",
+    "description": "Угольный салонный фильтр. Защищает от пыли и неприятных запахов.",
+    "images": [
+      "images/parts/oil.svg"
+    ]
+  },
+  {
+    "id": 6,
+    "article": "CH-BR-002",
+    "oem": "T11130070101",
+    "name": "Тормозные колодки задние",
+    "brand": "Chery",
+    "model": "Tiggo 7 Pro",
+    "generation": "2020-2024",
+    "category": "Тормозная система",
+    "price": 2900,
+    "oldPrice": 3400,
+    "stock": 7,
+    "warranty": 12,
+    "delivery": "1-2 дня",
+    "description": "Комплект задних тормозных колодок с датчиком износа.",
+    "images": [
+      "images/parts/brakes.svg"
+    ]
+  },
+  {
+    "id": 7,
+    "article": "OM-BD-003",
+    "oem": "G4B001A101",
+    "name": "Тормозной диск передний",
+    "brand": "Omoda",
+    "model": "C5",
+    "generation": "2022-2025",
+    "category": "Тормозная система",
+    "price": 4100,
+    "stock": 3,
+    "warranty": 12,
+    "delivery": "2-3 дня",
+    "description": "Вентилируемый передний тормозной диск, диаметр 302 мм.",
+    "images": [
+      "images/parts/brakes.svg"
+    ]
+  },
+  {
+    "id": 8,
+    "article": "GL-SH-002",
+    "oem": "5190231970",
+    "name": "Амортизатор задний",
+    "brand": "Geely",
+    "model": "Coolray",
+    "generation": "2019-2024",
+    "category": "Подвеска",
+    "price": 4600,
+    "stock": 6,
+    "warranty": 6,
+    "delivery": "2-3 дня",
+    "description": "Задний амортизатор подвески. Оригинальный номер Geely.",
+    "images": [
+      "images/parts/suspension.svg"
+    ]
+  },
+  {
+    "id": 9,
+    "article": "CN-SB-004",
+    "oem": "SAC6140A0",
+    "name": "Сайлентблок рычага",
+    "brand": "Changan",
+    "model": "CS35 Plus",
+    "generation": "2018-2024",
+    "category": "Подвеска",
+    "price": 1350,
+    "stock": 11,
+    "warranty": 6,
+    "delivery": "2-3 дня",
+    "description": "Сайлентблок переднего рычага, полиуретановый, комплект 2 шт.",
+    "images": [
+      "images/parts/suspension.svg"
+    ]
+  },
+  {
+    "id": 10,
+    "article": "GL-SP-005",
+    "oem": "3411100A02",
+    "name": "Свечи зажигания (комплект)",
+    "brand": "Geely",
+    "model": "Coolray",
+    "generation": "2019-2024",
+    "category": "Двигатель",
+    "price": 1900,
+    "oldPrice": 2300,
+    "stock": 8,
+    "warranty": 12,
+    "delivery": "1-2 дня",
+    "description": "Комплект из 4 свечей зажигания. Иридиевые электроды, срок службы 60 000 км.",
+    "images": [
+      "images/parts/engine.svg"
+    ]
+  },
+  {
+    "id": 11,
+    "article": "CH-BT-006",
+    "oem": "G0101018010",
+    "name": "Ремень ГРМ с роликами",
+    "brand": "Chery",
+    "model": "Tiggo 8",
+    "generation": "2018-2024",
+    "category": "Двигатель",
+    "price": 6800,
+    "stock": 2,
+    "warranty": 12,
+    "delivery": "2-3 дня",
+    "description": "Комплект ГРМ: ремень + 2 ролика + помпа. Полный комплект замены.",
+    "images": [
+      "images/parts/engine.svg"
+    ]
+  },
+  {
+    "id": 12,
+    "article": "UN-OIL-007",
+    "oem": "550041989",
+    "name": "Масло моторное 5W-30 (4л)",
+    "brand": "Универсальное",
+    "model": "Все модели",
+    "generation": "-",
+    "category": "Двигатель",
+    "price": 2450,
+    "oldPrice": 2900,
+    "stock": 20,
+    "warranty": 0,
+    "delivery": "1 день",
+    "description": "Синтетическое моторное масло 5W-30, API SP/ILSAC GF-6. Подходит для большинства китайских двигателей.",
+    "images": [
+      "images/parts/oil.svg"
+    ]
+  },
+  {
+    "id": 13,
+    "article": "CN-BAT-008",
+    "oem": "L2350R",
+    "name": "Аккумулятор 60 Ач",
+    "brand": "Changan",
+    "model": "CS35 Plus",
+    "generation": "2018-2024",
+    "category": "Электрика",
+    "price": 7200,
+    "stock": 4,
+    "warranty": 24,
+    "delivery": "1-2 дня",
+    "description": "Аккумуляторная батарея 60 Ач, обратная полярность. Гарантия 24 месяца.",
+    "images": [
+      "images/parts/electric.svg"
+    ]
+  },
+  {
+    "id": 14,
+    "article": "HV-ALT-009",
+    "oem": "M001G029A11T1",
+    "name": "Генератор 150 А",
+    "brand": "Haval",
+    "model": "Jolion",
+    "generation": "2020-2024",
+    "category": "Электрика",
+    "price": 18900,
+    "stock": 1,
+    "warranty": 12,
+    "delivery": "3-5 дней",
+    "description": "Генератор с регулятором напряжения, 150 А. Оригинальный номер Haval.",
+    "images": [
+      "images/parts/electric.svg"
+    ]
+  },
+  {
+    "id": 15,
+    "article": "HV-BMP-010",
+    "oem": "G040071011B1",
+    "name": "Бампер передний",
+    "brand": "Haval",
+    "model": "Jolion",
+    "generation": "2020-2024",
+    "category": "Кузов",
+    "price": 21500,
+    "oldPrice": 24500,
+    "stock": 1,
+    "warranty": 6,
+    "delivery": "3-5 дней",
+    "description": "Передний бампер в цвет кузова. Крепёж в комплекте.",
+    "images": [
+      "images/parts/body.svg"
+    ]
+  },
+  {
+    "id": 16,
+    "article": "CH-HL-011",
+    "oem": "T11100450101",
+    "name": "Фара передняя левая",
+    "brand": "Chery",
+    "model": "Tiggo 8",
+    "generation": "2018-2024",
+    "category": "Кузов",
+    "price": 26800,
+    "stock": 1,
+    "warranty": 6,
+    "delivery": "3-5 дней",
+    "description": "Передняя фара LED со светодиодной матрицей. Оригинал.",
+    "images": [
+      "images/parts/body.svg"
+    ]
+  },
+  {
+    "id": 17,
+    "article": "GL-RAK-012",
+    "oem": "5501000A01",
+    "name": "Рулевая рейка",
+    "brand": "Geely",
+    "model": "Coolray",
+    "generation": "2019-2024",
+    "category": "Рулевое",
+    "price": 32500,
+    "stock": 1,
+    "warranty": 12,
+    "delivery": "3-5 дней",
+    "description": "Рулевая рейка с электроусилителем в сборе. Оригинал.",
+    "images": [
+      "images/parts/steering.svg"
+    ]
+  },
+  {
+    "id": 18,
+    "article": "OM-TRM-013",
+    "oem": "G3D001A201",
+    "name": "Наконечник рулевой",
+    "brand": "Omoda",
+    "model": "C5",
+    "generation": "2022-2025",
+    "category": "Рулевое",
+    "price": 2300,
+    "stock": 6,
+    "warranty": 6,
+    "delivery": "2-3 дня",
+    "description": "Наконечник рулевой тяги, комплект 2 шт.",
+    "images": [
+      "images/parts/steering.svg"
+    ]
+  }
 ]

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffbeb"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="ic" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <g stroke="url(#ic)" stroke-width="10" stroke-linecap="round" fill="none">
+    <path d="M300 80 v120"/>
+    <path d="M250 130 h100 l-30 60 H220 Z"/>
+    <path d="M258 120 l-28-14 M342 120 l28-14"/>
+  </g>
+  <text x="300" y="370" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700" fill="#475569" text-anchor="middle">Подвеска</text>
+</svg>

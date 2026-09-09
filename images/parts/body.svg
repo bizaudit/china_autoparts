@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0fdf4"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="ic" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#059669"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <g transform="translate(100,80)" fill="none" stroke="url(#ic)" stroke-width="12" stroke-linejoin="round">
+    <path d="M60 180 h240 v60 a20 20 0 0 1 -20 20 H80 a20 20 0 0 1 -20 -20 Z"/>
+    <path d="M60 150 v-40 a20 20 0 0 1 20 -20 h40 a20 20 0 0 0 20 -20 v-10 a20 20 0 0 1 20 -20 h40 a20 20 0 0 1 20 20 v10 a20 20 0 0 0 20 20 h40"/>
+    <path d="M90 240 v40 M230 240 v40"/>
+  </g>
+  <rect x="150" y="270" width="90" height="50" rx="10" fill="url(#ic)" opacity=".85"/>
+  <text x="300" y="370" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700" fill="#475569" text-anchor="middle">Кузов</text>
+</svg>
