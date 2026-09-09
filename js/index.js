@@ -257,7 +257,9 @@ function render(items) {
         catalog.innerHTML += `
 <div class="card" data-id="${item.id}" style="animation-delay:${items.indexOf(item) * .05}s">
 
-    <img src="${image}" alt="${item.name}">
+    <div class="card-media">
+        <img src="${image}" alt="${item.name}">
+    </div>
 
     <div class="card-content">
 

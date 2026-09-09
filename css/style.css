@@ -423,7 +423,7 @@ a {
 .card {
     background:var(--card);
     border-radius:var(--radius-lg);
-    overflow:hidden;
+    overflow:visible;
     box-shadow:var(--shadow-sm);
     transition:var(--transition);
     display:flex;
@@ -431,6 +431,7 @@ a {
     border:1px solid var(--border);
     animation:fadeInUp .5s ease both;
     position:relative;
+    z-index:0;
 }
 
 .card:hover {
@@ -439,17 +440,28 @@ a {
     border-color:transparent;
 }
 
+.card-media {
+    position:relative;
+    z-index:1;
+    transition:var(--transition);
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+}
+
+.card:hover .card-media {
+    transform:scale(1.08);
+    z-index:3;
+    overflow:visible;
+}
+
 .card img {
     width:100%;
     height:220px;
     object-fit:cover;
     background:var(--bg-subtle);
     border-radius:var(--radius-lg);
-    transition:transform .4s cubic-bezier(.4,0,.2,1);
-}
-
-.card:hover img {
-    transform:scale(1.03);
+    display:block;
+    transition:var(--transition);
 }
 
 .card-content {
