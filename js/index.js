@@ -2,8 +2,10 @@ const catalog = document.getElementById("catalog");
 const brandFilter = document.getElementById("brandFilter");
 const modelFilter = document.getElementById("modelFilter");
 const searchInput = document.getElementById("searchInput");
+const categoriesBlock = document.getElementById("categories");
 
 let products = [];
+let activeCategory = "";
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 let compare = JSON.parse(localStorage.getItem("compare")) || [];
 
@@ -45,7 +47,8 @@ function getFilteredProducts() {
             item.article.toLowerCase().includes(search);
         const brandMatch = !brand || item.brand === brand;
         const modelMatch = !model || item.model === model;
-        return searchMatch && brandMatch && modelMatch;
+        const categoryMatch = !activeCategory || item.category === activeCategory;
+        return searchMatch && brandMatch && modelMatch && categoryMatch;
     });
 }
 
@@ -192,6 +195,8 @@ async function loadProducts() {
         products = await res.json();
         fillBrands();
         fillModels();
+        updateCategoryCounters();
+        bindCategoryEvents();
         render(products);
         updateCounters();
     } catch (e) {
@@ -229,6 +234,46 @@ function fillModels() {
         opt.value = m;
         opt.textContent = m;
         modelFilter.appendChild(opt);
+    });
+}
+
+function countByCategory(category) {
+    if (!category) return products.length;
+    return products.filter(p => p.category === category).length;
+}
+
+function updateCategoryCounters() {
+    if (!categoriesBlock) return;
+
+    const catMap = {
+        "catCountAll": countByCategory(""),
+        "catCountFilters": countByCategory("Фильтры"),
+        "catCountBrakes": countByCategory("Тормозная система"),
+        "catCountSuspension": countByCategory("Подвеска"),
+        "catCountEngine": countByCategory("Двигатель"),
+        "catCountElectric": countByCategory("Электрика"),
+        "catCountBody": countByCategory("Кузов"),
+        "catCountSteering": countByCategory("Рулевое"),
+    };
+
+    Object.entries(catMap).forEach(([id, count]) => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.textContent = count;
+            el.parentElement.style.display = count ? "" : "none";
+        }
+    });
+}
+
+function bindCategoryEvents() {
+    if (!categoriesBlock) return;
+    categoriesBlock.querySelectorAll(".category-card").forEach(card => {
+        card.onclick = () => {
+            categoriesBlock.querySelectorAll(".category-card").forEach(c => c.classList.remove("active"));
+            card.classList.add("active");
+            activeCategory = card.dataset.category;
+            filterProducts();
+        };
     });
 }
 
