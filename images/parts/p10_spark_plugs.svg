@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="100%" stop-color="#d3d8e0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9aa3ae"/>
+      <stop offset="45%" stop-color="#eef1f5"/>
+      <stop offset="100%" stop-color="#87909b"/>
+    </linearGradient>
+    <linearGradient id="cer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f2ec"/>
+      <stop offset="100%" stop-color="#cfc6b4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="520" rx="280" ry="24" fill="rgba(20,30,45,.12)"/>
+  <g transform="translate(120 200)">
+    <g>
+      <rect x="0" y="0" width="52" height="200" rx="10" fill="url(#body)" stroke="#6f7883" stroke-width="3"/>
+      <path d="M-8 22 q20 26 -2 46 M-8 118 q20 26 -2 46" stroke="#a9b2bd" stroke-width="5" fill="none"/>
+      <circle cx="26" cy="200" r="7" fill="#6f7883"/>
+      <rect x="10" y="-26" width="32" height="26" rx="6" fill="#a74a3c"/>
+      <path d="M8 170 l18 44 -4 12 a14 14 0 0 1 -14 8 l-8 0 6 -60z" fill="url(#cer)" stroke="#6f7883" stroke-width="2"/>
+      <path d="M10 66 h32 v16 l-6 10 h-20 l-6 -10z" fill="url(#cer)" stroke="#6f7883" stroke-width="2"/>
+    </g>
+    <g transform="translate(190 0)">
+      <rect x="0" y="0" width="52" height="200" rx="10" fill="url(#body)" stroke="#6f7883" stroke-width="3"/>
+      <path d="M-8 22 q20 26 -2 46 M-8 118 q20 26 -2 46" stroke="#a9b2bd" stroke-width="5" fill="none"/>
+      <circle cx="26" cy="200" r="7" fill="#6f7883"/>
+      <rect x="10" y="-26" width="32" height="26" rx="6" fill="#a74a3c"/>
+      <path d="M22 170 l-18 44 4 12 a14 14 0 0 0 14 8 l8 0 -6 -60z" fill="url(#cer)" stroke="#6f7883" stroke-width="2"/>
+      <path d="M32 66 h-32 v16 l6 10 h20 l6 -10z" fill="url(#cer)" stroke="#6f7883" stroke-width="2"/>
+    </g>
+    <g transform="translate(380 0)">
+      <rect x="0" y="0" width="52" height="200" rx="10" fill="url(#body)" stroke="#6f7883" stroke-width="3"/>
+      <path d="M-8 22 q20 26 -2 46 M-8 118 q20 26 -2 46" stroke="#a9b2bd" stroke-width="5" fill="none"/>
+      <circle cx="26" cy="200" r="7" fill="#6f7883"/>
+      <rect x="10" y="-26" width="32" height="26" rx="6" fill="#a74a3c"/>
+      <path d="M8 170 l18 44 -4 12 a14 14 0 0 1 -14 8 l-8 0 6 -60z" fill="url(#cer)" stroke="#6f7883" stroke-width="2"/>
+      <path d="M10 66 h32 v16 l-6 10 h-20 l-6 -10z" fill="url(#cer)" stroke="#6f7883" stroke-width="2"/>
+    </g>
+    <g transform="translate(570 0)">
+      <rect x="0" y="0" width="52" height="200" rx="10" fill="url(#body)" stroke="#6f7883" stroke-width="3"/>
+      <path d="M-8 22 q20 26 -2 46 M-8 118 q20 26 -2 46" stroke="#a9b2bd" stroke-width="5" fill="none"/>
+      <circle cx="26" cy="200" r="7" fill="#6f7883"/>
+      <rect x="10" y="-26" width="32" height="26" rx="6" fill="#a74a3c"/>
+      <path d="M22 170 l-18 44 4 12 a14 14 0 0 0 14 8 l8 0 -6 -60z" fill="url(#cer)" stroke="#6f7883" stroke-width="2"/>
+      <path d="M32 66 h-32 v16 l6 10 h20 l6 -10z" fill="url(#cer)" stroke="#6f7883" stroke-width="2"/>
+    </g>
+  </g>
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#5a6470" text-anchor="middle">Комплект · 4 шт.</text>
+</svg>

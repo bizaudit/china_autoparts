@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="100%" stop-color="#d3d8e0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#98a1ac"/>
+      <stop offset="35%" stop-color="#eef1f5"/>
+      <stop offset="70%" stop-color="#c3c9d1"/>
+      <stop offset="100%" stop-color="#87909b"/>
+    </linearGradient>
+    <linearGradient id="coil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#aeb6c0"/>
+      <stop offset="50%" stop-color="#6a7280"/>
+      <stop offset="100%" stop-color="#454c56"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="548" rx="190" ry="20" fill="rgba(20,30,45,.12)"/>
+  <g transform="translate(400 110)">
+    <rect x="-18" y="0" width="36" height="96" rx="9" fill="url(#body)" stroke="#6f7883" stroke-width="3"/>
+    <rect x="-8" y="90" width="16" height="40" rx="4" fill="#c3c9d1"/>
+    <path d="M-18 130 Q-120 220 -120 300" stroke="url(#coil)" stroke-width="22" fill="none" stroke-linecap="round"/>
+    <path d="M18 130 Q120 220 120 300" stroke="url(#coil)" stroke-width="22" fill="none" stroke-linecap="round"/>
+    <path d="M-120 330 h240" stroke="#5b8bcf" stroke-width="12" stroke-linecap="round"/>
+    <path d="M-128 330 h256 l-16 28 h-224z" fill="#7d8790" stroke="#5b636d" stroke-width="3"/>
+    <rect x="-14" y="352" width="52" height="78" rx="8" fill="url(#body)" stroke="#6f7883" stroke-width="3"/>
+  </g>
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#5a6470" text-anchor="middle">Задний</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="100%" stop-color="#d3d8e0"/>
+    </radialGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94a2b2"/>
+      <stop offset="40%" stop-color="#dfe5ec"/>
+      <stop offset="100%" stop-color="#7f8c9c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="520" rx="240" ry="26" fill="rgba(20,30,45,.12)"/>
+  <g transform="translate(215 170)">
+    <path d="M10 0 Q370 0 370 0 L370 260 Q370 270 360 270 Q10 270 0 270 L0 10 Q0 0 10 0Z" fill="url(#side)" stroke="#6b7683" stroke-width="3"/>
+    <g opacity=".5">
+      <rect x="22" y="18" width="58" height="234" rx="10" fill="#66717f"/>
+      <rect x="94" y="16" width="58" height="238" rx="10" fill="#76828f"/>
+      <rect x="166" y="14" width="58" height="240" rx="10" fill="#66717f"/>
+      <rect x="238" y="16" width="58" height="238" rx="10" fill="#76828f"/>
+    </g>
+    <rect x="120" y="-40" width="150" height="56" rx="8" fill="#eef1f5" stroke="#6b7683" stroke-width="4"/>
+    <text x="195" y="-8" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#4c5560" text-anchor="middle">370-2030</text>
+  </g>
+</svg>

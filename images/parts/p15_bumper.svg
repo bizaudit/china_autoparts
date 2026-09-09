@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="100%" stop-color="#d3d8e0"/>
+    </radialGradient>
+    <linearGradient id="bmp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8e9e6"/>
+      <stop offset="100%" stop-color="#aeb4bc"/>
+    </linearGradient>
+    <linearGradient id="grill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a5158"/>
+      <stop offset="100%" stop-color="#20262c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="520" rx="260" ry="20" fill="rgba(20,30,45,.12)"/>
+  <g transform="translate(90 180)">
+    <path d="M10 0 L610 0 Q620 0 620 10 L620 180 L0 180 L0 10 Q0 0 10 0Z" fill="url(#bmp)" stroke="#7d8790" stroke-width="4"/>
+    <path d="M70 -8 h300 l22 24 h-344z" fill="#7d8790"/>
+    <rect x="60" y="22" width="280" height="40" rx="12" fill="url(#grill)"/>
+    <rect x="100" y="28" width="12" height="28" rx="4" fill="#5b6879"/>
+    <rect x="140" y="28" width="12" height="28" rx="4" fill="#5b6879"/>
+    <rect x="180" y="28" width="12" height="28" rx="4" fill="#5b6879"/>
+    <rect x="220" y="28" width="12" height="28" rx="4" fill="#5b6879"/>
+    <rect x="260" y="28" width="12" height="28" rx="4" fill="#5b6879"/>
+    <ellipse cx="390" cy="52" rx="26" ry="16" fill="url(#grill)"/>
+    <rect x="420" y="80" width="86" height="20" rx="5" fill="#d96b4a"/>
+    <circle cx="520" cy="60" r="30" fill="#f5f7fa" stroke="#7d8790" stroke-width="3"/>
+    <circle cx="520" cy="60" r="16" fill="#dbe1e8" stroke="#7d8790" stroke-width="2"/>
+    <path d="M360 180 L360 120 Q360 108 372 108 L464 108" stroke="#7d8790" stroke-width="14" fill="none"/>
+    <rect x="120" y="76" width="44" height="60" rx="8" fill="none" stroke="#7d8790" stroke-width="4"/>
+  </g>
+  <text x="400" y="560" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#5a6470" text-anchor="middle">Передний бампер</text>
+</svg>

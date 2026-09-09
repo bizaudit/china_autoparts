@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="100%" stop-color="#d3d8e0"/>
+    </radialGradient>
+    <linearGradient id="can" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#31445e"/>
+      <stop offset="60%" stop-color="#17283f"/>
+      <stop offset="100%" stop-color="#0e1a2b"/>
+    </linearGradient>
+    <linearGradient id="lid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eef1f5"/>
+      <stop offset="100%" stop-color="#98a1ac"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5b942"/>
+      <stop offset="100%" stop-color="#d98e18"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="520" rx="240" ry="24" fill="rgba(20,30,45,.12)"/>
+  <g transform="translate(250 140)">
+    <path d="M0 260 Q300 250 300 0 L280 0 L40 0 L0 260Z" fill="url(#can)"/>
+    <path d="M0 0 L300 0 Q300 40 300 40 L0 40Z" fill="url(#lid)"/>
+    <rect x="18" y="70" width="240" height="34" rx="6" fill="url(#glow)"/>
+    <text x="138" y="94" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#fff" text-anchor="middle">5W-30</text>
+    <text x="138" y="52" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">СИНТЕТИЧЕСКОЕ МОТОРНОЕ</text>
+    <text x="138" y="242" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#c8d2e0" text-anchor="middle">4 л</text>
+    <path d="M60 120 h156 l-10 90 h-136z" fill="none" stroke="#2a3d57" stroke-width="3"/>
+    <path d="M110 90 l20 16 -6 46 h-28 l-6 -46z" fill="#d3dbe6"/>
+  </g>
+</svg>

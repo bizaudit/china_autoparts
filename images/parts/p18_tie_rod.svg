@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="100%" stop-color="#d3d8e0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#98a1ac"/>
+      <stop offset="30%" stop-color="#eef1f5"/>
+      <stop offset="70%" stop-color="#c3c9d1"/>
+      <stop offset="100%" stop-color="#87909b"/>
+    </linearGradient>
+    <linearGradient id="nut" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f6f9"/>
+      <stop offset="100%" stop-color="#aeb6c0"/>
+    </linearGradient>
+    <radialGradient id="ball" cx="40%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#f2f4f7"/>
+      <stop offset="100%" stop-color="#87909b"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="520" rx="240" ry="20" fill="rgba(20,30,45,.12)"/>
+  <g transform="translate(300 280)">
+    <rect x="0" y="-18" width="280" height="36" rx="10" fill="url(#body)" stroke="#6f7883" stroke-width="3"/>
+    <path d="M270 -14 h34 l44 100 h-78z" fill="url(#body)" stroke="#6f7883" stroke-width="3"/>
+    <circle cx="340" cy="88" r="22" fill="url(#nut)"/>
+    <circle cx="340" cy="88" r="14" fill="#c3c9d1" stroke="#6f7883" stroke-width="2"/>
+    <path d="M332 110 l8 40 8 -40" fill="url(#nut)"/>
+    <ellipse cx="340" cy="158" rx="40" ry="30" fill="url(#ball)" stroke="#6f7883" stroke-width="4"/>
+    <ellipse cx="328" cy="150" rx="12" ry="8" fill="#ffffff" opacity=".4"/>
+    <rect x="-30" y="-14" width="50" height="28" rx="6" fill="url(#nut)"/>
+    <path d="M-34 -14 l14 -10 14 0 14 10" fill="url(#nut)" stroke="#6f7883" stroke-width="2"/>
+    <path d="M-34 14 l14 10 14 0 14 -10" fill="url(#nut)" stroke="#6f7883" stroke-width="2"/>
+    <g opacity=".5">
+      <rect x="80" y="-12" width="14" height="24" rx="3" fill="#6f7883"/>
+      <rect x="110" y="-10" width="14" height="20" rx="3" fill="#6f7883"/>
+    </g>
+  </g>
+  <text x="340" y="560" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#5a6470" text-anchor="middle">Комплект · 2 шт.</text>
+</svg>

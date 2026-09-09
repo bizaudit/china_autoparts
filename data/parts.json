@@ -15,8 +15,8 @@
     "delivery": "1-2 дня",
     "description": "Оригинальный масляный фильтр двигателя. Подходит для Chery Tiggo 7 Pro, Tiggo 8, Tiggo 4.",
     "images": [
-      "images/parts/oil_filter.jpg",
-      "images/parts/filter.svg"
+      "images/parts/p01_oil_filter.svg",
+      "images/parts/oil_filter.jpg"
     ]
   },
   {
@@ -35,6 +35,7 @@
     "delivery": "1-2 дня",
     "description": "Комплект передних тормозных колодок. Низкая шумность, высокий ресурс.",
     "images": [
+      "images/parts/p02_brake_pads_front.svg",
       "images/parts/brakes.svg"
     ]
   },
@@ -54,6 +55,7 @@
     "delivery": "2-3 дня",
     "description": "Передний амортизатор подвески. Газомасляный, повышенная плавность хода.",
     "images": [
+      "images/parts/p03_shock.svg",
       "images/parts/suspension.svg"
     ]
   },
@@ -72,6 +74,7 @@
     "delivery": "1-2 дня",
     "description": "Воздушный фильтр двигателя — двухслойная фильтрующая ткань.",
     "images": [
+      "images/parts/p04_air_filter.svg",
       "images/parts/filter.svg"
     ]
   },
@@ -90,7 +93,8 @@
     "delivery": "1-2 дня",
     "description": "Угольный салонный фильтр. Защищает от пыли и неприятных запахов.",
     "images": [
-      "images/parts/oil.svg"
+      "images/parts/p05_cabin_filter.svg",
+      "images/parts/filter.svg"
     ]
   },
   {
@@ -109,6 +113,7 @@
     "delivery": "1-2 дня",
     "description": "Комплект задних тормозных колодок с датчиком износа.",
     "images": [
+      "images/parts/p06_brake_pads_rear.svg",
       "images/parts/brakes.svg"
     ]
   },
@@ -127,6 +132,7 @@
     "delivery": "2-3 дня",
     "description": "Вентилируемый передний тормозной диск, диаметр 302 мм.",
     "images": [
+      "images/parts/p07_brake_disc.svg",
       "images/parts/brakes.svg"
     ]
   },
@@ -145,6 +151,7 @@
     "delivery": "2-3 дня",
     "description": "Задний амортизатор подвески. Оригинальный номер Geely.",
     "images": [
+      "images/parts/p08_shock_rear.svg",
       "images/parts/suspension.svg"
     ]
   },
@@ -163,6 +170,7 @@
     "delivery": "2-3 дня",
     "description": "Сайлентблок переднего рычага, полиуретановый, комплект 2 шт.",
     "images": [
+      "images/parts/p09_silentblock.svg",
       "images/parts/suspension.svg"
     ]
   },
@@ -182,6 +190,7 @@
     "delivery": "1-2 дня",
     "description": "Комплект из 4 свечей зажигания. Иридиевые электроды, срок службы 60 000 км.",
     "images": [
+      "images/parts/p10_spark_plugs.svg",
       "images/parts/engine.svg"
     ]
   },
@@ -200,6 +209,7 @@
     "delivery": "2-3 дня",
     "description": "Комплект ГРМ: ремень + 2 ролика + помпа. Полный комплект замены.",
     "images": [
+      "images/parts/p11_timing_belt.svg",
       "images/parts/engine.svg"
     ]
   },
@@ -219,6 +229,7 @@
     "delivery": "1 день",
     "description": "Синтетическое моторное масло 5W-30, API SP/ILSAC GF-6. Подходит для большинства китайских двигателей.",
     "images": [
+      "images/parts/p12_motor_oil.svg",
       "images/parts/oil.svg"
     ]
   },
@@ -237,6 +248,7 @@
     "delivery": "1-2 дня",
     "description": "Аккумуляторная батарея 60 Ач, обратная полярность. Гарантия 24 месяца.",
     "images": [
+      "images/parts/p13_battery.svg",
       "images/parts/electric.svg"
     ]
   },
@@ -255,6 +267,7 @@
     "delivery": "3-5 дней",
     "description": "Генератор с регулятором напряжения, 150 А. Оригинальный номер Haval.",
     "images": [
+      "images/parts/p14_generator.svg",
       "images/parts/electric.svg"
     ]
   },
@@ -274,6 +287,7 @@
     "delivery": "3-5 дней",
     "description": "Передний бампер в цвет кузова. Крепёж в комплекте.",
     "images": [
+      "images/parts/p15_bumper.svg",
       "images/parts/body.svg"
     ]
   },
@@ -292,6 +306,7 @@
     "delivery": "3-5 дней",
     "description": "Передняя фара LED со светодиодной матрицей. Оригинал.",
     "images": [
+      "images/parts/p16_headlight.svg",
       "images/parts/body.svg"
     ]
   },
@@ -310,6 +325,7 @@
     "delivery": "3-5 дней",
     "description": "Рулевая рейка с электроусилителем в сборе. Оригинал.",
     "images": [
+      "images/parts/p17_steering_rack.svg",
       "images/parts/steering.svg"
     ]
   },
@@ -328,6 +344,7 @@
     "delivery": "2-3 дня",
     "description": "Наконечник рулевой тяги, комплект 2 шт.",
     "images": [
+      "images/parts/p18_tie_rod.svg",
       "images/parts/steering.svg"
     ]
   }

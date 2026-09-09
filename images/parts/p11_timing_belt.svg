@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="100%" stop-color="#d3d8e0"/>
+    </radialGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eef1f5"/>
+      <stop offset="100%" stop-color="#98a1ac"/>
+    </linearGradient>
+    <linearGradient id="belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d343c"/>
+      <stop offset="100%" stop-color="#171c22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="520" rx="280" ry="24" fill="rgba(20,30,45,.12)"/>
+  <g transform="translate(400 300)">
+    <ellipse rx="300" ry="150" fill="none" stroke="url(#belt)" stroke-width="34"/>
+    <ellipse rx="300" ry="150" fill="none" stroke="#39414b" stroke-width="34" stroke-dasharray="10 14"/>
+    <circle rx="0" ry="0" r="60" fill="url(#steel)" stroke="#6f7883" stroke-width="4"/>
+    <circle r="26" fill="#6f7883"/>
+    <circle r="8" fill="#4c5560"/>
+    <path d="M-330 0 h-40 M330 0 h40" stroke="url(#steel)" stroke-width="26" stroke-linecap="round"/>
+    <path d="M0 -190 v-36 M0 190 v36" stroke="url(#steel)" stroke-width="26" stroke-linecap="round"/>
+    <circle cx="0" cy="-300" rx="46" ry="46" fill="url(#steel)" stroke="#6f7883" stroke-width="4"/>
+    <circle cx="0" cy="-300" r="20" fill="#6f7883"/>
+    <circle cx="0" cy="300" rx="46" ry="46" fill="url(#steel)" stroke="#6f7883" stroke-width="4"/>
+    <circle cx="0" cy="300" r="20" fill="#6f7883"/>
+  </g>
+  <text x="620" y="575" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#5a6470" text-anchor="middle">Комплект</text>
+</svg>

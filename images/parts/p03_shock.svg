@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="100%" stop-color="#d3d8e0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#98a1ac"/>
+      <stop offset="35%" stop-color="#eef1f5"/>
+      <stop offset="70%" stop-color="#c3c9d1"/>
+      <stop offset="100%" stop-color="#87909b"/>
+    </linearGradient>
+    <linearGradient id="coil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#aeb6c0"/>
+      <stop offset="50%" stop-color="#6a7280"/>
+      <stop offset="100%" stop-color="#454c56"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="550" rx="200" ry="22" fill="rgba(20,30,45,.12)"/>
+  <g transform="translate(400 130)">
+    <rect x="-22" y="0" width="44" height="120" rx="10" fill="url(#body)" stroke="#6f7883" stroke-width="3"/>
+    <rect x="-40" y="18" width="80" height="46" rx="12" fill="#d7dce3" stroke="#6f7883" stroke-width="3"/>
+    <path d="M-22 66 L-108 296" stroke="url(#coil)" stroke-width="26" fill="none" stroke-linecap="round"/>
+    <path d="M22 66 L108 296" stroke="url(#coil)" stroke-width="26" fill="none" stroke-linecap="round"/>
+    <path d="M-108 296 h216" stroke="#5b8bcf" stroke-width="14" stroke-linecap="round"/>
+    <path d="M-116 296 h232 l-14 26 h-204z" fill="#7d8790" stroke="#5b636d" stroke-width="3"/>
+    <rect x="-16" y="318" width="64" height="96" rx="8" fill="url(#body)" stroke="#6f7883" stroke-width="3"/>
+    <path d="M-8 323 L-8 398 M8 323 L8 398 M24 323 L24 392" stroke="#6f7883" stroke-width="5"/>
+    <rect x="-6" y="414" width="52" height="30" rx="6" fill="#d7dce3" stroke="#6f7883" stroke-width="3"/>
+  </g>
+</svg>

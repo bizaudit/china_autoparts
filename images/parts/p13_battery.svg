@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="100%" stop-color="#d3d8e0"/>
+    </radialGradient>
+    <linearGradient id="case" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8d97a2"/>
+      <stop offset="30%" stop-color="#e8ecf1"/>
+      <stop offset="70%" stop-color="#c3c9d1"/>
+      <stop offset="100%" stop-color="#8a939e"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f6f9"/>
+      <stop offset="100%" stop-color="#a9b2bd"/>
+    </linearGradient>
+    <radialGradient id="term" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#b9c2cc"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="520" rx="230" ry="24" fill="rgba(20,30,45,.12)"/>
+  <g transform="translate(400 310)">
+    <rect x="-190" y="-90" width="380" height="190" rx="18" fill="url(#case)" stroke="#6f7883" stroke-width="4"/>
+    <rect x="-170" y="-70" width="340" height="26" rx="4" fill="#8a5c8f"/>
+    <rect x="-170" y="-34" width="340" height="26" rx="4" fill="#5a6470"/>
+    <rect x="-170" y="16" width="340" height="26" rx="4" fill="#8a5c8f"/>
+    <rect x="-160" y="-150" width="60" height="62" rx="10" fill="url(#cap)" stroke="#6f7883" stroke-width="3"/>
+    <rect x="100" y="-150" width="60" height="62" rx="10" fill="url(#cap)" stroke="#6f7883" stroke-width="3"/>
+    <circle cx="-130" cy="-122" r="13" fill="url(#term)"/>
+    <circle cx="130" cy="-122" r="13" fill="url(#term)"/>
+    <text x="0" y="66" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#f5f7fa" text-anchor="middle">12V 60 Ач</text>
+    <text x="0" y="96" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#d5dbe2" text-anchor="middle">Обратная полярность</text>
+  </g>
+</svg>

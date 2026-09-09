@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="100%" stop-color="#d3d8e0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#98a1ac"/>
+      <stop offset="30%" stop-color="#eef1f5"/>
+      <stop offset="70%" stop-color="#c3c9d1"/>
+      <stop offset="100%" stop-color="#87909b"/>
+    </linearGradient>
+    <radialGradient id="lens" cx="38%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#f5f7fa"/>
+      <stop offset="60%" stop-color="#d5dce6"/>
+      <stop offset="100%" stop-color="#aeb6c0"/>
+    </radialGradient>
+    <linearGradient id="led" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#f0f4f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="520" rx="260" ry="20" fill="rgba(20,30,45,.12)"/>
+  <g transform="translate(400 300)">
+    <path d="M-280 0 Q-280 -170 0 -200 Q280 -170 300 0 L300 150 Q300 180 260 180 L-260 180 Q-280 180 -280 150Z" fill="url(#body)" stroke="#6f7883" stroke-width="4"/>
+    <path d="M-260 -10 Q-260 -160 0 -180 Q260 -160 270 -10 L270 160 L-260 160Z" fill="url(#lens)" stroke="#8a939e" stroke-width="3"/>
+    <g opacity=".8">
+      <path d="M-180 30 h130 l-24 60 h-106z" fill="url(#led)" stroke="#c3c9d1" stroke-width="2"/>
+      <path d="M-170 48 h112 l-18 30 h-94z" fill="#e8ecf1" stroke="#b7c0ca" stroke-width="1.5"/>
+      <rect x="22" y="8" width="236" height="70" rx="12" fill="url(#led)" stroke="#c3c9d1" stroke-width="3"/>
+      <path d="M240 20 l30 6 h-20 l20 44 h-30z" fill="#a9b2bd"/>
+    </g>
+    <circle cx="-110" cy="-76" r="34" fill="#8a939e"/>
+    <circle cx="-110" cy="-76" r="26" fill="#6c7480"/>
+    <circle cx="-110" cy="-76" r="12" fill="#3c434c"/>
+    <rect x="-270" y="180" width="52" height="18" rx="5" fill="#7d8790"/>
+    <rect x="218" y="180" width="52" height="18" rx="5" fill="#7d8790"/>
+  </g>
+  <text x="400" y="560" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#5a6470" text-anchor="middle">LED · Фара передняя</text>
+</svg>

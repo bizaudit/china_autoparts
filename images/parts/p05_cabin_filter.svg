@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="100%" stop-color="#d3d8e0"/>
+    </radialGradient>
+    <linearGradient id="pad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a515b"/>
+      <stop offset="50%" stop-color="#242a31"/>
+      <stop offset="100%" stop-color="#38404a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="520" rx="250" ry="24" fill="rgba(20,30,45,.12)"/>
+  <g transform="translate(190 210)">
+    <path d="M0 20 Q210 42 260 20 L260 100 Q210 122 0 100 Z" fill="#eef1f5" stroke="#7d8790" stroke-width="3"/>
+    <path d="M4 52 Q206 74 252 52 L252 58 Q206 80 4 58 Z" fill="url(#pad)"/>
+    <path d="M4 58 Q206 80 252 58 L252 62 Q206 84 4 62 Z" fill="#151a20"/>
+    <g transform="translate(330 -40)">
+      <rect x="0" y="30" width="170" height="220" rx="16" fill="#eef1f5" stroke="#7d8790" stroke-width="4"/>
+      <path d="M8 40 h154 v200 h-154z" fill="url(#pad)" opacity=".55"/>
+      <path d="M40 26 h90 l14 22 h-118z" fill="#7d8790"/>
+    </g>
+  </g>
+  <text x="330" y="140" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#5a6470" text-anchor="middle">Фильтр салона</text>
+</svg>
