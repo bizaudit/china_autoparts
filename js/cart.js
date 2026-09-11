@@ -105,6 +105,8 @@ function bindEvents() {
         btn.onclick = () => {
             App.increaseQty(+btn.dataset.id);
             refreshQty(+btn.dataset.id, btn);
+
+            
         };
     });
 
