@@ -21,10 +21,35 @@ function getStockClass(stock) {
     return "low-stock";
 }
 
+function computeTotals() {
+    const items = getCartItems();
+    return {
+        items,
+        totalQty: items.reduce((sum, item) => sum + item.qty, 0),
+        totalPrice: items.reduce((sum, item) => sum + item.price * item.qty, 0),
+        oldTotal: items.reduce((sum, item) => sum + ((item.oldPrice || item.price) * item.qty), 0)
+    };
+}
+
+function renderSummary(t = computeTotals()) {
+    if (!cartSummary) return;
+    cartSummary.style.display = "block";
+    cartTotalQty.textContent = t.totalQty;
+    cartTotalPrice.textContent = App.formatPrice(t.totalPrice) + " ₽";
+    if (cartOldTotal) {
+        if (t.oldTotal > t.totalPrice) {
+            cartOldTotal.textContent = App.formatPrice(t.oldTotal) + " ₽";
+            cartOldTotal.style.display = "";
+        } else {
+            cartOldTotal.style.display = "none";
+        }
+    }
+}
+
 function render() {
     App.updateCounters();
 
-    const items = getCartItems();
+    const { items } = computeTotals();
 
     if (!items.length) {
         cartList.innerHTML = `
@@ -54,7 +79,7 @@ function render() {
                     </div>
                     <div class="qty-box">
                         <button class="qty-btn minus" data-id="${item.id}">−</button>
-                        <span class="qty-value">${item.qty}</span>
+                        <span class="qty-value" data-id="${item.id}">${item.qty}</span>
                         <button class="qty-btn plus" data-id="${item.id}">+</button>
                     </div>
                 </div>
@@ -63,39 +88,30 @@ function render() {
         </article>
     `).join("");
 
-    const totalQty = items.reduce((sum, item) => sum + item.qty, 0);
-    const totalPrice = items.reduce((sum, item) => sum + item.price * item.qty, 0);
-    const oldTotal = items.reduce((sum, item) => sum + ((item.oldPrice || item.price) * item.qty), 0);
-
-    if (cartSummary) {
-        cartSummary.style.display = "block";
-        cartTotalQty.textContent = totalQty;
-        cartTotalPrice.textContent = App.formatPrice(totalPrice) + " ₽";
-        if (cartOldTotal) {
-            if (oldTotal > totalPrice) {
-                cartOldTotal.textContent = App.formatPrice(oldTotal) + " ₽";
-                cartOldTotal.style.display = "";
-            } else {
-                cartOldTotal.style.display = "none";
-            }
-        }
-    }
-
+    renderSummary();
     bindEvents();
+}
+
+function refreshQty(id, button) {
+    const item = App.getCart().find(i => i.id === id);
+    if (!item) { render(); return; }
+    const qtyEl = button.closest(".page-card")?.querySelector(".qty-value");
+    if (qtyEl) qtyEl.textContent = item.qty;
+    renderSummary();
 }
 
 function bindEvents() {
     document.querySelectorAll(".plus").forEach(btn => {
         btn.onclick = () => {
             App.increaseQty(+btn.dataset.id);
-            render();
+            refreshQty(+btn.dataset.id, btn);
         };
     });
 
     document.querySelectorAll(".minus").forEach(btn => {
         btn.onclick = () => {
             App.decreaseQty(+btn.dataset.id);
-            render();
+            refreshQty(+btn.dataset.id, btn);
         };
     });
 
